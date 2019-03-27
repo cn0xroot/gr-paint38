@@ -1,16 +1,16 @@
-title: The PAINT OOT Module
-brief: Short description of gr-paint
-tags: # Tags are arbitrary, but look at CGRAN what other authors are using
-  - sdr
+title: gr-paint38
+brief: An OFDM spectrum painter/transmitter.
+tags:
+  - OFDM
+  - Fun
 author:
-  - Author Name <authors@email.address>
+  - Ron Economos <w6rz@comcast.net>
 copyright_owner:
-  - Copyright Owner 1
-license:
-#repo: # Put the URL of the repository here, or leave blank for default
-#website: <module_website> # If you have a separate project website, put it here
-#icon: <icon_url> # Put a URL to a square image here that will be used as an icon on CGRAN
+  - Ron Economos <w6rz@comcast.net>
+license: GPL version 3 or later.
+repo: https://github.com/drmpeg/gr-paint
+#website:
+#icon:
 ---
-A longer, multi-line description of gr-paint.
-You may use some *basic* Markdown here.
-If left empty, it will try to find a README file instead.
+This project implements a software-defined OFDM transmitter that "paints" monochrome images into a receiver waterfall.
+It is based on https://github.com/polygon/spectrum_painter
