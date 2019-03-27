@@ -184,10 +184,10 @@ blocks:
     affinity: ''
     alias: ''
     autocontrast: '0'
-    bt709_map: '0'
+    bt709_map: '1'
     comment: ''
     image_file: fionna.png
-    image_flip: '1'
+    image_flip: '0'
     image_invert: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
