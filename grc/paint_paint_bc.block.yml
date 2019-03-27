@@ -1,0 +1,43 @@
+id: paint_paint_bc
+label: Spectrum Painter
+category: '[Paint]'
+
+templates:
+  imports: import paint
+  make: paint.paint_bc(${width}, ${repeats}, ${equalization.val}, ${randomsrc.val}, ${randomsrc.ports})
+
+parameters:
+- id: width
+  label: Image Width
+  dtype: int
+  default: 1920
+- id: repeats
+  label: Line Repeats
+  dtype: int
+  default: 8
+- id: equalization
+  label: Sin(x)/x Equalization
+  dtype: enum
+  options: [EQUALIZATION_OFF, EQUALIZATION_ON]
+  option_labels: ['Off', 'On']
+  option_attributes:
+    val: [paint.EQUALIZATION_OFF, paint.EQUALIZATION_OFF]
+- id: randomsrc
+  label: Random Source
+  dtype: enum
+  options: [INTERNAL, EXTERNAL]
+  option_labels: [Internal, External]
+  option_attributes:
+    val: [paint.INTERNAL, paint.EXTERNAL]
+    ports: [1, 2]
+
+inputs:
+- domain: stream
+  dtype: byte
+  multiplicity: ${randomsrc.ports}
+
+outputs:
+- domain: stream
+  dtype: complex
+
+file_format: 1
