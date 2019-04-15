@@ -21,7 +21,7 @@ parameters:
   options: [EQUALIZATION_OFF, EQUALIZATION_ON]
   option_labels: ['Off', 'On']
   option_attributes:
-    val: [paint.EQUALIZATION_OFF, paint.EQUALIZATION_OFF]
+    val: [paint.EQUALIZATION_OFF, paint.EQUALIZATION_ON]
 - id: randomsrc
   label: Random Source
   dtype: enum
