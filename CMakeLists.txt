@@ -64,7 +64,7 @@ IF(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR
     CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     SET(CMAKE_CXX_STANDARD 11)
 ELSE()
-    message(warning "C++ standard could not be set because compiler is not GNU, Clang or MSVC.")
+    message(WARNING "C++ standard could not be set because compiler is not GNU, Clang or MSVC.")
 ENDIF()
 
 IF(CMAKE_C_COMPILER_ID STREQUAL "GNU" OR
@@ -72,7 +72,7 @@ IF(CMAKE_C_COMPILER_ID STREQUAL "GNU" OR
     CMAKE_C_COMPILER_ID STREQUAL "MSVC")
     SET(CMAKE_C_STANDARD 11)
 ELSE()
-    message(warning "C standard could not be set because compiler is not GNU, Clang or MSVC.")
+    message(WARNING "C standard could not be set because compiler is not GNU, Clang or MSVC.")
 ENDIF()
 
 ########################################################################
